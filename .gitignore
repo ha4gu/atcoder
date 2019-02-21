@@ -6,7 +6,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -116,3 +117,4 @@ build-iPhoneSimulator/
 
 input
 output
+test.rb
