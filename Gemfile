@@ -1,17 +1,8 @@
 # frozen_string_literal: true
-
 source "https://rubygems.org"
-
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
-
-# gem "rails"
-gem "ruby-debug-ide"
-gem "debase"
+ruby '2.3.3'
+gem 'ruby-debug-ide', '>= 0.6.0'
+gem "debase", '>= 0.2.1'
 gem "rubocop"
-gem "fastri"
-gem "rcodetools"
-gem "ruby-lint"
-gem "reek"
-gem "faster"
-gem "debride"
-
+gem "solargraph"
