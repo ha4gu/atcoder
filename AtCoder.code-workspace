@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "AtCoder",
+			"path": "."
+		}
+	],
+	"settings": {
+		// for Ruby
+		"ruby.interpreter.commandPath": "ruby",
+		"ruby.useLanguageServer": true,
+		"ruby.useBundler": true,
+		"ruby.pathToBundler": "bundle",
+		"ruby.lint": {
+			"rubocop": true,
+		},
+		"ruby.lintDebounceTime": 500,
+
+		// for Ruby Solargraph
+		"solargraph.useBundler": true,
+		"solargraph.bundlerPath": "bundle",
+		"solargraph.hover": false,
+	}
+}
