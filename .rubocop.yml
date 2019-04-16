@@ -203,7 +203,7 @@ Naming/ClassAndModuleCamelCase:
   Enabled: true
 
 Naming/FileName:
-  Enabled: true
+  Enabled: false
 
 Naming/MethodName:
   Enabled: true
