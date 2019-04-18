@@ -13,16 +13,14 @@
 		// for Ruby
 		"ruby.interpreter.commandPath": "ruby",
 		"ruby.useLanguageServer": true,
-		"ruby.useBundler": true,
-		"ruby.pathToBundler": "bundle",
+		"ruby.useBundler": false,
 		"ruby.lint": {
 			"rubocop": true,
 		},
 		"ruby.lintDebounceTime": 500,
 
 		// for Ruby Solargraph
-		"solargraph.useBundler": true,
-		"solargraph.bundlerPath": "bundle",
+		"solargraph.useBundler": false,
 		"solargraph.hover": false,
 	}
 }
