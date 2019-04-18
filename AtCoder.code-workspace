@@ -1,8 +1,12 @@
 {
 	"folders": [
 		{
-			"name": "AtCoder",
-			"path": "."
+			"path": ".",
+			"name": "AtCoder"
+		},
+		{
+			"path": "/Users/yuta/OneDrive/localrepos/競プロ",
+			"name": "Knowledge"
 		}
 	],
 	"settings": {
