@@ -7,24 +7,33 @@ image_b = []
 m.times do
   image_b << gets.chomp
 end
-p image_a
-p image_b
-(image_a.size).times do |i|
-  if image_a[i].include?(image_b[0])
-    index = 0
-    until index.nil?
-      position = image_a[i].index(image_b[0], index)
-      flag = true
-      (image_b.size).times do |j|
-        flag = false if image_a[i+j].index(image_b[j], position).nil?
-      end
-      if flag
-        puts 'Yes'
+
+def get_indices(line, part)
+  offset = 0
+  indices = []
+  while index = line.index(part, offset)
+    indices << index
+    offset = index + part.length
+  end
+  indices
+end
+
+find = false
+(n-m+1).times do |current_line|
+  break if find
+  get_indices(image_a[current_line], image_b[0]).each do |current_index|
+    flag = true
+    m.times do |check_line|
+      next if check_line == 0
+      unless image_a[current_line+check_line][current_index..current_index+m-1] == image_b[check_line]
+        flag = false
         break
       end
-      index = position + 1
     end
-  else
-    next
+    if flag
+      find = true
+      break
+    end
   end
 end
+puts find ? "Yes" : "No"
