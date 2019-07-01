@@ -252,7 +252,7 @@ Performance/StartWith:
   Enabled: true
 
 Security/Eval:
-  Enabled: true
+  Enabled: false
 
 Style/ArrayJoin:
   Enabled: true
